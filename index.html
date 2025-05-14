@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="color-scheme" content="light">
   <title>Waypoint | High-End Travel in Puerto Rico</title>
   <style>
     body {
@@ -58,6 +59,14 @@
     a {
       color: #fff;
       text-decoration: underline;
+    }
+
+    /* Dark mode override */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #f7f8f2 !important;
+        color: #1c3b2f !important;
+      }
     }
   </style>
 </head>
