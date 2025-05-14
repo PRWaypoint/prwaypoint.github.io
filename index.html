@@ -61,11 +61,15 @@
       text-decoration: underline;
     }
 
-    /* Dark mode override */
+    /* Final Brave/Dark Mode override */
     @media (prefers-color-scheme: dark) {
-      body {
+      html, body {
         background-color: #f7f8f2 !important;
         color: #1c3b2f !important;
+      }
+      * {
+        background-color: transparent !important;
+        color: inherit !important;
       }
     }
   </style>
